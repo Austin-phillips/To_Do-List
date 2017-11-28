@@ -1,0 +1,15 @@
+<h1>Add Item to List</h1>
+
+
+<%= form_for @list do |f| %>
+  <%= f.label :item %>
+  <%= f.text_field :item %>
+  <br />
+  <%= f.label :done %>
+  <%= f.check_box :done %>
+  <br />
+  <%= f.submit %>
+<% end %>
+
+
+<%= link_to 'Back to List', lists_path %>
